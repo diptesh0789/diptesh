@@ -32,8 +32,7 @@ pipeline{
 		}
 	}
 
-agent any
-stages {
+
         stage('Example Build') {
             agent { docker 'maven:3-alpine' } 
             steps {
@@ -48,5 +47,5 @@ stages {
                 sh 'java -version'
             }
         }
-    }
+    
  }
