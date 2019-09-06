@@ -25,8 +25,7 @@ pipeline{
 
 				script{
 
-					def disc_size = sh(script:'df/--output-avail|tail-1',
-					returnStdout:true).trim() as Integer
+					def disc_size = sh(script:'df/--output-avail|tail-1',returnStdout:true).trim() as Integer
 					println ("Disc_size = $disc_size");
 				}
 			}
