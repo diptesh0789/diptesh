@@ -30,10 +30,7 @@ pipeline{
 				}
 			}
 		}
-	}
-
-
-        stage('Example Build') {
+		 stage('Example Build') {
             agent { docker 'maven:3-alpine' } 
             steps {
                 echo 'Hello, Maven'
@@ -48,4 +45,5 @@ pipeline{
             }
         }
     
+	}       
  }
