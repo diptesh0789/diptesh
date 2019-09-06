@@ -9,7 +9,7 @@ pipeline{
 
 				echo 'Loading external file'
 				script{
-					def echoer = load "./jenkins/Echoer.groovy"
+					def echoer = load "./Jenkins/Echoer.groovy"
 					echoer.echoit("Hello World")
 				}
 				echo 'Loaded file and called'
